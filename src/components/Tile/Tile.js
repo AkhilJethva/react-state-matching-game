@@ -1,11 +1,14 @@
+
 import React from 'react'
 
 import './Tile.css'
 
-const Tile = () => {
+const Tile = (props) => {
 
+  const dynCol = props.selected || props.matched ? {backgroundColor: prop.color} : null 
   return (
-    <div className='Tile'>
+    <div className='Tile' style={dynCol}>
+      {props.selected || props.matched ? <props.svg/> : null}
     </div>
   )
 }
