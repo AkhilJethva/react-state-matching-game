@@ -20,7 +20,7 @@ class App extends Component{
 
   startGame(numTiles){
     (state)=>(
-      this.setState((state)=>({playing: true, previousTileIndex:null,toBeCleared:null,tiles:createTile(state.numTiles)}))
+      this.setState((state)=>({playing: true, previousTileIndex:null,toBeCleared:null,tiles:createTiles(state.numTiles)}))
     )
   }
 
