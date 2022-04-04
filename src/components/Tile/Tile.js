@@ -5,9 +5,9 @@ import './Tile.css'
 
 const Tile = (props) => {
 
-  const dynCol = props.selected || props.matched ? {backgroundColor: prop.color} : null 
+  const dynamicColor = props.selected || props.matched ? {backgroundColor: prop.color} : null 
   return (
-    <div className='Tile' style={dynCol}>
+    <div className='Tile' style={dynamicColor}>
       {props.selected || props.matched ? <props.svg/> : null}
     </div>
   )
